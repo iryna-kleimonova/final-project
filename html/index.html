@@ -38,15 +38,13 @@
           </a>
           <ul class="header-menu-list">
             <li class="header-menu-item">
-              <a class="header-menu-link current" href="./index.html"
-                >How It Works</a
-              >
+              <a class="header-menu-link current" href="#work">How It Works</a>
             </li>
             <li class="header-menu-item">
-              <a class="header-menu-link" href="">Vegetables</a>
+              <a class="header-menu-link" href="#vegetables">Vegetables</a>
             </li>
             <li class="header-menu-item">
-              <a class="header-menu-link" href="">Reviews</a>
+              <a class="header-menu-link" href="#reviews">Reviews</a>
             </li>
           </ul>
         </nav>
@@ -67,15 +65,15 @@
           <nav class="mobile-menu-nav">
             <ul class="mobile-menu-list">
               <li class="mobile-menu-item">
-                <a class="mobile-menu-link current" href="./index.html"
+                <a class="mobile-menu-link current" href="#work"
                   >How It Works</a
                 >
               </li>
               <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="">Vegetables</a>
+                <a class="mobile-menu-link" href="#vegetables">Vegetables</a>
               </li>
               <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="">Reviews</a>
+                <a class="mobile-menu-link" href="#reviews">Reviews</a>
               </li>
             </ul>
           </nav>
@@ -88,33 +86,36 @@
     <main>
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">organic vegetables to your diet today!</h1>
-          <p class="hero-text">
-            Our expertly curated vegetable baskets are made with the freshest,
-            highest quality vegetables available. Fresh Harvest Box has got you
-            covered. Fresh, high-quality vegetables in expertly curated
-            vegetable baskets delivered to you.
-          </p>
+          <div class="hero-text-wrap">
+            <h1 class="hero-title">organic vegetables to your diet today!</h1>
+            <p class="hero-text">
+              Our expertly curated vegetable baskets are made with the freshest,
+              highest quality vegetables available. Fresh Harvest Box has got
+              you covered. Fresh, high-quality vegetables in expertly curated
+              vegetable baskets delivered to you.
+            </p>
 
-          <div class="hero-img-wrap">
-            <img
-              class="hero-img"
-              src="/img/hero-mob-1x.jpg"
-              alt="Vegetables"
-              width="375"
-              height="372"
-            />
+            <!-- <div class="hero-img-wrap">
+              <img
+                class="hero-img"
+                src="/img/hero-mob-1x.jpg"
+                alt="Vegetables"
+                width="375"
+                height="372"
+              />
+            </div> -->
           </div>
         </div>
       </section>
 
       <!-- How it works -->
-      <section class="work">
+      <section class="work" id="work">
         <div class="container">
           <div class="work-img-wrap">
+            <h2 class="work-title visually-hidden">How it works</h2>
             <img src="/img/work-mob-1x.jpg" alt="woman" class="work-img" />
           </div>
-          <h3 class="work-title">
+          <h3 class="work-subtitle">
             To order your
             <span class="title-accent">vegetable</span> basket, simply follow
             these
@@ -126,40 +127,38 @@
             covered. Fresh, high-quality vegetables in expertly curated
             vegetable baskets delivered to you.
           </p>
-          <ul class="work-list">
+          <ol class="work-list">
             <li class="work-item">
-              <div class="work-item-container">1</div>
               <p class="work-desc">
-                Just choose the vegetable you want to order by clicking on the
-                checkboxes next to it.
+                Just choose <strong>the vegetable</strong> you want to order by
+                clicking on the checkboxes <strong>next to it</strong>.
               </p>
             </li>
             <li class="work-item">
-              <div class="work-item-container">2</div>
-              <p class="work-desc">
-                Click on the basket and fill out the form.
+              <p class="work-desc work-desc-second">
+                Click on <strong>the basket</strong> and fill out the form.
               </p>
             </li>
             <li class="work-item">
-              <div class="work-item-container">3</div>
               <p class="work-desc">
-                Sit back and relax! Your fresh vegetables basket will be
-                delivered.
+                Sit back and relax! Your
+                <strong>fresh vegetables</strong> basket will be delivered.
               </p>
             </li>
-          </ul>
+          </ol>
         </div>
       </section>
       <!-- Advertisement -->
       <section class="advertisement">
         <div class="container">
-          <h2 class="advertisement-title">
+          <h2 class="visually-hidden">Advertisement</h2>
+          <p class="advertisement-desc">
             Discount up to 40%! Taste the vitamins and keep your health
-          </h2>
+          </p>
         </div>
       </section>
       <!-- Vegetables -->
-      <section class="vegetables">
+      <section class="vegetables" id="vegetables">
         <div class="container">
           <h2 class="vegetables-title">
             organic <span class="title-accent">vegetables</span>
@@ -205,9 +204,11 @@
       </section>
 
       <!-- Reviews -->
-      <section class="reviews">
+      <section class="reviews" id="reviews">
         <div class="container">
-          <h2 class="reviews-title">reviews from our customers</h2>
+          <h2 class="reviews-title">
+            reviews from our <span class="reviews-accent">customers</span>
+          </h2>
           <p class="reviews-text">
             Words of our customers: impressions and opinions about the quality
             of our services and the freshness of our products.
@@ -216,7 +217,7 @@
             <li class="reviews-item">
               <img src="" alt="man" />
               <h3 class="reviews-subtitle">John Wax</h3>
-              <p class="reviews-text">
+              <p class="reviews-desc">
                 These vegetables are my secret to delicious and healthy meals.
                 The quality is always at the highest level, the aroma and taste
                 are enchanting. I advise every fan of real products!
@@ -225,7 +226,7 @@
             <li class="reviews-item">
               <img src="" alt="woman" />
               <h3 class="reviews-subtitle">Victoria Romashenko</h3>
-              <p class="reviews-text">
+              <p class="reviews-desc">
                 I love how fast and fresh the vegetables are delivered. Salads
                 always turn out so appetizing, and soups are real masterpieces.
                 The quality is impeccable!
@@ -234,7 +235,7 @@
             <li class="reviews-item">
               <img src="" alt="man" />
               <h3 class="reviews-subtitle">Ihor Trachuk</h3>
-              <p class="reviews-text">
+              <p class="reviews-desc">
                 Recently tried my fresh tomatoes and peppers - amazing! The
                 authenticity of the taste, as if from the garden directly to my
                 table. It is now my main vegetable supplier.
@@ -247,43 +248,131 @@
       <!-- Your order -->
       <section class="order">
         <div class="container">
-          <h2 class="order-title"></h2>
-          <p class="order-text"></p>
-          <form action="" class="order-form">
-            <label aria-label="order-name" class="order-field">
-              <input
-                type="text"
-                class="order-input"
-                name="user-name"
-                id="user-name"
-                placeholder="Full name"
-              />
-            </label>
-            <label aria-label="order-email" class="order-field">
-              <input
-                type="email"
-                class="order-input"
-                name="user-email"
-                id="user-email"
-                placeholder="Email"
-              />
-            </label>
-            <label aria-label="order-comment" class="order-field">
-              <textarea
-                name="user-comment"
-                id="user-comment"
-                class="order-textarea"
-                placeholder="Comment"
-              ></textarea>
-            </label>
-            <button type="submit" class="order-submit-btn">Send</button>
-          </form>
+          <h2 class="order-title">
+            Fresh <span class="title-accent">Harvest</span> Box has got you
+            covered
+          </h2>
+          <p class="order-text">
+            Our boxes are packed with delicious, nutritious vegetables, perfect
+            for anyone looking to eat healthier or support local farmers. Order
+            your box today and start enjoying the best that nature has to offer!
+          </p>
+          <div class="order-form-container">
+            <p class="order-form-title">
+              Ordering from us is quick and easy! Fill out the form below and we
+              will contact you !
+            </p>
+            <form action="" class="order-form">
+              <label aria-label="order-name" class="order-field">
+                <input
+                  type="text"
+                  class="order-input"
+                  name="user-name"
+                  id="user-name"
+                  placeholder="Full name"
+                  pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                  required
+                />
+              </label>
+              <label aria-label="order-email" class="order-field">
+                <input
+                  type="email"
+                  class="order-input"
+                  name="user-email"
+                  id="user-email"
+                  placeholder="Email"
+                  pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                  required
+                />
+              </label>
+              <label aria-label="order-comment" class="order-field">
+                <textarea
+                  name="user-comment"
+                  id="user-comment"
+                  class="order-textarea"
+                  placeholder="Comment"
+                ></textarea>
+              </label>
+              <button type="submit" class="order-submit-btn">Send</button>
+            </form>
+          </div>
+          <div class="order-soc-wrap">
+            <img src="" alt="" width="295" height="272" class="order-img" />
+            <p class="order-soc-desc">Follow us on our social networks:</p>
+            <ul class="order-soc-list">
+              <li class="order-soc-item">
+                <a
+                  href="https://www.instagram.com/goitclub/"
+                  class="order-soc-link"
+                  >instagram</a
+                >
+                /
+              </li>
+              <li class="order-soc-item">
+                <a
+                  href="https://www.facebook.com/goITclub/"
+                  class="order-soc-link"
+                  >facebook</a
+                >
+                /
+              </li>
+              <li class="order-soc-item">
+                <a href="https://www.youtube.com/c/GoIT" class="order-soc-link"
+                  >youtube</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <!-- footer -->
       <footer class="footer">
-        <div class="container"></div>
+        <div class="container">
+          <div class="footer-logo-container">
+            <a class="logo header-logo" href="./index.html">
+              <svg class="logo-icon" width="16" height="16">
+                <use href="/img/icons.svg#icon-logo"></use>
+              </svg>
+              <svg class="logo-text" width="148" height="12">
+                <use href="/img/icons.svg#icon-logo-text"></use>
+              </svg>
+            </a>
+          </div>
+          <p class="footer-text">
+            Whether you're looking for a healthy snack or a thoughtful gift, our
+            fruit baskets are the perfect choice.
+          </p>
+
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="#work">how it works</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#vegetables">vegetables</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#reviews">reviews</a>
+            </li>
+          </ul>
+
+          <div class="footer-contact-info">
+            <a href="tel:+380684439426" class="footer-contact"
+              >+380 (68) 443-94-26</a
+            >
+            <p class="footer-contact">
+              1678 S. Pioneer Road Salt Lake City UT 84104
+            </p>
+          </div>
+
+          <div class="footer-main">
+            <div class="footer-links">
+              <a href="#" class="footer-policy-link">Privacy Policy</a> /
+              <a href="#" class="footer-policy-link">Cookie settings</a>
+            </div>
+            <p class="footer-company">©Green Harvest 2023</p>
+          </div>
+        </div>
       </footer>
     </main>
   </body>
