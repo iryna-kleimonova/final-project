@@ -29,10 +29,10 @@
       <div class="container header-container">
         <nav class="header-nav">
           <a class="logo header-logo" href="./index.html">
-            <svg class="header-logo-icon" width="16" height="16">
+            <svg class="logo-icon" width="16" height="16">
               <use href="/img/icons.svg#icon-logo"></use>
             </svg>
-            <svg class="header-logo-text" width="148" height="12">
+            <svg class="logo-text" width="148" height="12">
               <use href="/img/icons.svg#icon-logo-text"></use>
             </svg>
           </a>
@@ -94,17 +94,8 @@
               you covered. Fresh, high-quality vegetables in expertly curated
               vegetable baskets delivered to you.
             </p>
-
-            <!-- <div class="hero-img-wrap">
-              <img
-                class="hero-img"
-                src="/img/hero-mob-1x.jpg"
-                alt="Vegetables"
-                width="375"
-                height="372"
-              />
-            </div> -->
           </div>
+          <div class="hero-img-wrap"></div>
         </div>
       </section>
 
@@ -152,8 +143,9 @@
       <section class="advertisement">
         <div class="container">
           <h2 class="visually-hidden">Advertisement</h2>
+          <p class="advertisement-desc accent-desc">Discount up to 40%!</p>
           <p class="advertisement-desc">
-            Discount up to 40%! Taste the vitamins and keep your health
+            Taste the vitamins and keep your health
           </p>
         </div>
       </section>
@@ -163,7 +155,7 @@
           <h2 class="vegetables-title">
             organic <span class="title-accent">vegetables</span>
           </h2>
-          <p class="vegetables-text">
+          <p class="vegetables-desc">
             Our organic vegetables are hand-picked from local farms and
             delivered straight to your doorstep, ensuring that you get the
             freshest and most nutritious produce possible.
@@ -172,32 +164,62 @@
             <li class="vegetables-item">
               <h3 class="vegetables-subtitle">eggplant</h3>
               <p class="vegetables-text">60 USD / kg</p>
-              <img src="" alt="eggplant" />
+              <img
+                src="/img/eggplant-mob-1x.png"
+                alt="eggplant"
+                width="280"
+                height="240"
+              />
             </li>
             <li class="vegetables-item">
               <h3 class="vegetables-subtitle">leek</h3>
               <p class="vegetables-text">50 USD / kg</p>
-              <img src="" alt="leek" />
+              <img
+                src="/img/leek-mob-1x.png"
+                alt="leek"
+                width="280"
+                height="240"
+              />
             </li>
             <li class="vegetables-item">
               <h3 class="vegetables-subtitle">mushrooms</h3>
               <p class="vegetables-text">40 USD / kg</p>
-              <img src="" alt="mushrooms" />
+              <img
+                src="/img/mushrooms-mob-1x.png"
+                alt="mushrooms"
+                width="280"
+                height="240"
+              />
             </li>
             <li class="vegetables-item">
               <h3 class="vegetables-subtitle">corn</h3>
               <p class="vegetables-text">60 USD / kg</p>
-              <img src="" alt="corn" />
+              <img
+                src="/img/corn-mob-1x.png"
+                alt="corn"
+                width="280"
+                height="240"
+              />
             </li>
             <li class="vegetables-item">
               <h3 class="vegetables-subtitle">sweet potatoes</h3>
               <p class="vegetables-text">50 USD / kg</p>
-              <img src="" alt="sweet potatoes" />
+              <img
+                src="/img/sweetpotato-mob-1x.png"
+                alt="sweet potatoes"
+                width="280"
+                height="240"
+              />
             </li>
             <li class="vegetables-item">
               <h3 class="vegetables-subtitle">carrot</h3>
               <p class="vegetables-text">40 USD / kg</p>
-              <img src="" alt="carrot" />
+              <img
+                src="/img/carrot-mob-1x.png"
+                alt="carrot"
+                width="280"
+                height="240"
+              />
             </li>
           </ul>
         </div>
@@ -207,7 +229,7 @@
       <section class="reviews" id="reviews">
         <div class="container">
           <h2 class="reviews-title">
-            reviews from our <span class="reviews-accent">customers</span>
+            reviews from our <span class="accent-green">customers</span>
           </h2>
           <p class="reviews-text">
             Words of our customers: impressions and opinions about the quality
@@ -215,7 +237,13 @@
           </p>
           <ul class="reviews-list">
             <li class="reviews-item">
-              <img src="" alt="man" />
+              <img
+                class="reviews-img"
+                src="/img/reviews1-mob-1x.png"
+                alt="man"
+                width="56"
+                height="56"
+              />
               <h3 class="reviews-subtitle">John Wax</h3>
               <p class="reviews-desc">
                 These vegetables are my secret to delicious and healthy meals.
@@ -224,7 +252,13 @@
               </p>
             </li>
             <li class="reviews-item">
-              <img src="" alt="woman" />
+              <img
+                class="reviews-img"
+                src="/img/reviews2-mob-1x.png"
+                alt="woman"
+                width="56"
+                height="56"
+              />
               <h3 class="reviews-subtitle">Victoria Romashenko</h3>
               <p class="reviews-desc">
                 I love how fast and fresh the vegetables are delivered. Salads
@@ -233,7 +267,13 @@
               </p>
             </li>
             <li class="reviews-item">
-              <img src="" alt="man" />
+              <img
+                class="reviews-img"
+                src="/img/reviews3-mob-1x.png"
+                alt="man"
+                width="56"
+                height="56"
+              />
               <h3 class="reviews-subtitle">Ihor Trachuk</h3>
               <p class="reviews-desc">
                 Recently tried my fresh tomatoes and peppers - amazing! The
@@ -259,8 +299,9 @@
           </p>
           <div class="order-form-container">
             <p class="order-form-title">
-              Ordering from us is quick and easy! Fill out the form below and we
-              will contact you !
+              Ordering <span class="accent-violet">from us</span> is quick and
+              easy! Fill out <span class="accent-green">the form</span> below
+              and we will contact you !
             </p>
             <form action="" class="order-form">
               <label aria-label="order-name" class="order-field">
@@ -297,7 +338,13 @@
             </form>
           </div>
           <div class="order-soc-wrap">
-            <img src="" alt="" width="295" height="272" class="order-img" />
+            <img
+              src="/img/order-mob-1x.png"
+              alt=""
+              width="295"
+              height="272"
+              class="order-img"
+            />
             <p class="order-soc-desc">Follow us on our social networks:</p>
             <ul class="order-soc-list">
               <li class="order-soc-item">
