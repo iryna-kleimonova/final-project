@@ -27,127 +27,131 @@
     <!-- header -->
     <header class="header">
       <div class="container header-container">
-        <nav class="header-nav">
-          <a class="logo header-logo" href="./index.html">
-            <svg class="logo-icon" width="16" height="16">
-              <use href="/img/icons.svg#icon-logo"></use>
-            </svg>
-            <svg class="logo-text" width="148" height="12">
-              <use href="/img/icons.svg#icon-logo-text"></use>
-            </svg>
-          </a>
-          <ul class="header-menu-list">
-            <li class="header-menu-item">
-              <a class="header-menu-link current" href="#work">How It Works</a>
-            </li>
-            <li class="header-menu-item">
-              <a class="header-menu-link" href="#vegetables">Vegetables</a>
-            </li>
-            <li class="header-menu-item">
-              <a class="header-menu-link" href="#reviews">Reviews</a>
-            </li>
-          </ul>
-        </nav>
-        <button type="button" class="burger-btn" data-menu-open>
-          <svg class="burger-icon" width="32" height="32">
-            <use href="/img/icons.svg#icon-burger"></use>
+        <a href="../index.html">
+          <svg class="header-logo" width="168" height="16">
+            <use href="/images/sprite.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <div class="header-container-wrap">
+          <nav class="header-nav">
+            <ul class="header-list">
+              <li class="header-link"><a href="#section1">How It Works</a></li>
+              <li class="header-link"><a href="#section2">Vegetables</a></li>
+              <li class="header-link"><a href="#section3">Reviews</a></li>
+            </ul>
+          </nav>
+          <button class="header-btn" type="button">Shop now</button>
+        </div>
+        <button class="header-btn-menu" type="button">
+          <svg id="open-btn" class="header-open" width="32" height="32">
+            <use href="/images/sprite.svg#icon-burger"></use>
           </svg>
         </button>
       </div>
 
-      <div class="mobile-menu" data-menu>
-        <div class="container mobile-menu-container">
-          <button class="mobile-menu-close" data-menu-close>
-            <svg class="menu-icon-close" width="32" height="32">
-              <use href="/img/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-          <nav class="mobile-menu-nav">
-            <ul class="mobile-menu-list">
-              <li class="mobile-menu-item current">
-                <a class="mobile-menu-link current" href="#work"
-                  >How It Works</a
-                >
-              </li>
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="#vegetables">Vegetables</a>
-              </li>
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="#reviews">Reviews</a>
-              </li>
-            </ul>
-          </nav>
-
-          <button type="button" class="mobile-menu-btn">Shop now</button>
+      <div class="ph-menu-bg" id="modal">
+        <div class="ph-menu-container">
+          <ul class="ph-menu-list">
+            <li class="ph-menu-list-item">
+              <button type="button" class="ph-menu-btn">
+                <a href="#section1" class="a-link-modal" id="a-one"></a>How It
+                Works
+              </button>
+            </li>
+            <li class="ph-menu-list-item">
+              <button type="button" class="ph-menu-btn">
+                <a href="#section2" class="a-link-modal" id="a-two"></a
+                >Vegetables
+              </button>
+            </li>
+            <li class="ph-menu-list-item">
+              <button type="button" class="ph-menu-btn">
+                <a href="#section3" class="a-link-modal" id="a-three"></a
+                >Reviews
+              </button>
+            </li>
+          </ul>
+          <button type="button" class="ph-menu-shop-btn">Shop Now</button>
+          <svg id="close-btn" class="menu-close-btn" width="32" height="32">
+            <use href="/images/sprite.svg#icon-close"></use>
+          </svg>
         </div>
       </div>
     </header>
 
     <main>
+      <!-- hero -->
       <section class="hero">
-        <div class="container">
-          <div class="hero-text-wrap">
+        <div class="container hero-container">
+          <div class="hero-container-desk">
             <h1 class="hero-title">organic vegetables to your diet today!</h1>
-            <p class="hero-text">
+            <p class="hero-desc">
               Our expertly curated vegetable baskets are made with the freshest,
               highest quality vegetables available. Fresh Harvest Box has got
               you covered. Fresh, high-quality vegetables in expertly curated
               vegetable baskets delivered to you.
             </p>
           </div>
-          <div class="hero-img-wrap"></div>
+          <div class="hero-container-img"></div>
         </div>
       </section>
 
       <!-- How it works -->
-      <section class="work" id="work">
-        <div class="container">
-          <div class="work-img-wrap">
-            <h2 class="work-title visually-hidden">How it works</h2>
-            <picture>
-              <source media="(min-width: )" srcset="" />
+      <section class="work" id="section1">
+        <div class="work-container">
+          <h2 class="visually-hidden">How it works</h2>
+          <div class="work-img-wrapper">
+            <picture class="work-img">
+              <source
+                media="(min-width: 1280px)"
+                srcset="/images/work-1x.jpg 1x, /images/work-2x.jpg 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="/images/work-tab-1x.jpg 1x, /images/work-tab-2x.jpg 2x"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="/images/work-mob-1x.jpg 1x, /images/work-mob-2x.jpg 2x"
+              />
+              <img src="/images/work-tab-1x.jpg" alt="woman" width="640" />
             </picture>
-            <img
-              src="/img/work-mob-1x.jpg"
-              alt="woman"
-              width="335"
-              height="452"
-              class="work-img"
-            />
           </div>
-          <h3 class="work-subtitle">
-            To order your
-            <span class="title-accent">vegetable</span> basket, simply follow
-            these
-            <span class="title-accent">easy steps</span>
-          </h3>
-          <p class="work-text">
-            Our expertly curated vegetable baskets are made with the freshest,
-            highest quality vegetables available. Fresh Harvest Box has got you
-            covered. Fresh, high-quality vegetables in expertly curated
-            vegetable baskets delivered to you.
-          </p>
-          <ol class="work-list">
-            <li class="work-item">
-              <p class="work-desc">
-                Just choose <strong>the vegetable</strong> you want to order by
-                clicking on the checkboxes <strong>next to it</strong>.
-              </p>
-            </li>
-            <li class="work-item">
-              <p class="work-desc work-desc-second">
-                Click on <strong>the basket</strong> and fill out the form.
-              </p>
-            </li>
-            <li class="work-item">
-              <p class="work-desc">
-                Sit back and relax! Your
-                <strong>fresh vegetables</strong> basket will be delivered.
-              </p>
-            </li>
-          </ol>
+          <div class="work-wrapper">
+            <h3 class="work-subtitle">
+              To order your
+              <span class="title-accent">vegetable</span> basket, simply follow
+              these
+              <span class="title-accent">easy steps</span>
+            </h3>
+            <p class="work-text">
+              Our baskets are assembled with care and delivered straight to your
+              doorstep, so you can enjoy the taste of fresh fruit without ever
+              leaving your home.
+            </p>
+            <ol class="work-list">
+              <li class="work-item">
+                <p class="work-desc">
+                  Just choose <strong>the vegetable</strong> you want to order
+                  by clicking on the checkboxes <strong>next to it</strong>.
+                </p>
+              </li>
+              <li class="work-item">
+                <p class="work-desc work-desc-second">
+                  Click on <strong>the basket</strong> and fill out the form.
+                </p>
+              </li>
+              <li class="work-item">
+                <p class="work-desc">
+                  Sit back and relax! Your
+                  <strong>fresh vegetables</strong> basket will be delivered.
+                </p>
+              </li>
+            </ol>
+          </div>
         </div>
       </section>
+
       <!-- Advertisement -->
       <section class="advertisement">
         <div class="container">
